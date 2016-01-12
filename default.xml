@@ -19,6 +19,10 @@
            fetch="https://github.com/Haxynox"
            revision="Mmm" />
 
+  <remote  name="Al"
+           fetch="https://github.com/Alectradar"
+           revision="mm6.0" />
+
   <remote  name="flex"
            fetch="http://src.flex-os.com/FlexOS"
            revision="mm6.0-staging" />
@@ -491,7 +495,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <project path="manifest" name="manifest" remote="aospb" />
+  <project path="manifest" name="manifest-2" remote="Al" />
 
   <!-- CAF repos -->
   <project path="vendor/qcom/opensource/display-frameworks" name="vendor_qcom_opensource_display-frameworks" remote="aospb" />
