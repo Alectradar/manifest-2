@@ -14,6 +14,10 @@
   <remote  name="flayr"
            fetch="https://github.com/FlayrStaging"
            revision="mm6.0" />
+
+  <remote  name="flex"
+           fetch="http://src.flex-os.com/FlexOS"
+           revision="mm6.0-staging" />
   
   <remote  name="cm"
            fetch="https://github.com/CyanogenMod"
@@ -294,7 +298,7 @@
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="aospb" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="aospb" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi.git" remote="flex" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
@@ -307,8 +311,8 @@
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="aospb" />
-  <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" remote="aospb" />
+  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt.git" remote="flex" />
+  <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan.git" remote="flex" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
@@ -362,7 +366,7 @@
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="aospb" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan" remote="aospb" revision="mm6.0-caf" />
-  <project path="hardware/ril" name="hardware_ril" remote="aospb" />
+  <project path="hardware/ril" name="hardware_ril.git" remote="flex" />
   <project path="hardware/ril-caf" name="hardware_ril" remote="aospb" revision="mm6.0-caf" />
   <project path="libcore" name="libcore" remote="aospb" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
@@ -504,10 +508,10 @@
   
   <!-- FlayrOS Manifest -->
   <project path="external/sepolicy" name="external_sepolicy" remote="flayr" />
-  <project path="frameworks/av" name="frameworks_av" remote="flayr" />
+  <project path="frameworks/av" name="frameworks_av.git" remote="flex" />
   <project path="frameworks/base" name="frameworks_base" remote="flayr" />
-  <project path="frameworks/native" name="frameworks_native" remote="flayr" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="flayr" />
+  <project path="frameworks/native" name="frameworks_native.git" remote="flex" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony.git" remote="flex" />
   <project path="packages/apps/Apollo" name="packages_apps_Apollo" remote="flayr" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="flayr" />
   <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="flayr" />
